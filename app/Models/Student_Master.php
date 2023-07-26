@@ -10,5 +10,5 @@ class Student_Master extends Model
     use HasFactory;
     protected $table = 'student_masters';
     protected $id = 'enrollment_no';
-    protected $fillable = ['first_name', 'last_name','middle_name','phone_number','department_ref_id'];
+    protected $fillable = ['enrollment_no','first_name', 'last_name','middle_name','phone_number','department_ref_id'];
 }
