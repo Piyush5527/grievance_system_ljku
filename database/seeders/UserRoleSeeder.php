@@ -14,8 +14,20 @@ class UserRoleSeeder extends Seeder
     public function run(): void
     {
         UserRoles::factory()->create([
-                'role_id_ref' => 1,
-                'user_id_ref' => 1
-            ]);
+            'role_id_ref' => 1,
+            'user_id_ref' => 1
+        ]);
+        UserRoles::factory()->create([
+            'role_id_ref' => 2,
+            'user_id_ref' => 2
+        ]);
+        UserRoles::factory()->create([
+            'role_id_ref' => 3,
+            'user_id_ref' => 3
+        ]);
+        UserRoles::factory()->create([
+            'role_id_ref' => 4,
+            'user_id_ref' => 4
+        ]);
     }
 }
