@@ -22,14 +22,7 @@ class UserSeeder extends Seeder
             'name' => 'Director',
             'email' => 'director@gmail.com',
         ]);
-        User::factory()->create([
-            'name' => 'Faculty',
-            'email' => 'faculty@gmail.com',
-        ]);
-        User::factory()->create([
-            'name' => 'Piyush jain',
-            'email' => 'piyushjainkgp36@gmail.com',
-        ]);
+        
 
     }
 }
