@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Student_Master;
+use App\Models\FacultyMasters;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class StudentMasterSeeder extends Seeder
+class FacultyMastersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Student_Master::factory(50)->create();
+        FacultyMasters::factory(15)->create();
     }
 }

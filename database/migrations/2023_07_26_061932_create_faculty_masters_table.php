@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('middle_name');
             $table->string('phone_number');
-            $table->string('designation');
+            $table->enum('designation',['Faculty','Visiting Faculty','Peon','HOD'])->default('Faculty')->nullable();
             $table->integer('department_ref_id')->unsigned();
             $table->foreign('department_ref_id')->references('department_id')->on('departments');
             $table->timestamps();
