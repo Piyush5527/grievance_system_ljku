@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\FacultyMasters;
+use App\Models\Semester;
 use App\Models\Student_Master;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +23,8 @@ class UserTransactionFactory extends Factory
             'enrollment_ref_id' => Student_Master::all()->pluck('enrollment_no')->random(),
             'faculty_ref_id' => FacultyMasters::all()->pluck('faculty_id')->random(),
             'email' => fake()->email(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+
         ];
     }
 }

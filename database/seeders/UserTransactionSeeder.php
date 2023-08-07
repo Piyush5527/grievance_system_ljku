@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Semester;
 use App\Models\UserTransaction;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -15,7 +16,8 @@ class UserTransactionSeeder extends Seeder
     {
         UserTransaction::factory(10)->create([
             'faculty_ref_id' => null,
-            'type'=>'Student'
+            'type'=>'Student',
+            'semester_ref_id' => Semester::all()->pluck('semester_id')->random()
         ]);
 
         UserTransaction::factory(10)->create([

@@ -18,7 +18,11 @@ return new class extends Migration
             $table->bigInteger('faculty_ref_id')->unsigned()->nullable();
             $table->foreign('faculty_ref_id')->references('faculty_id')->on('faculty_masters');
             $table->string('email')->unique();
+            $table->integer('semester_ref_id')->unsigned()->nullable();
+            $table->foreign('semester_ref_id')->references('semester_id')->on('semesters');
             $table->enum('type',['Student','Faculty']);
+            $table->boolean('is_active')->default(true);
+
             $table->string('password');
 
             $table->timestamps();
