@@ -21,12 +21,29 @@ class RoleSeeder extends Seeder
             'role' => 'director'
         ]);
 
+        // Role::factory()->create([
+        //     'role' => 'faculty'
+        // ]);
+
+        // Role::factory()->create([
+        //     'role' => 'student'
+        // ]);
+
         Role::factory()->create([
-            'role' => 'faculty'
+            'role' => 'HOD'
         ]);
 
         Role::factory()->create([
-            'role' => 'student'
+            'role' => 'admin'
         ]);
+
+        Role::factory()->create([
+            'role' => 'institute_admin'
+        ]);
+
+        Role::factory()->create([
+            'role' => 'trustee'
+        ]);
+
     }
 }

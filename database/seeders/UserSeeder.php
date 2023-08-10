@@ -16,13 +16,39 @@ class UserSeeder extends Seeder
         User::factory()->create([
             'name' => 'Super Admin',
             'email' => 'superadmin@gmail.com',
+            'role' => 1,
         ]);
 
         User::factory()->create([
             'name' => 'Director',
             'email' => 'director@gmail.com',
+            'role' => 2
         ]);
-        
+
+        User::factory()->create([
+            'name' => 'HOD',
+            'email' => 'hod@gmail.com',
+            'role' => 3
+        ]);
+
+        User::factory()->create([
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'role' => 4
+        ]);
+
+        User::factory()->create([
+            'name' => 'institute admin',
+            'email' => 'instituteadmin@gmail.com',
+            'role' => 5
+        ]);
+
+        User::factory()->create([
+            'name' => 'Trustee',
+            'email' => 'trustee@gmail.com',
+            'role' => 6
+        ]);
+
 
     }
 }

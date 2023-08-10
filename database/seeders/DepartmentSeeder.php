@@ -14,14 +14,19 @@ class DepartmentSeeder extends Seeder
     public function run(): void
     {
         Department::factory()->create([
-            'department' => 'MCA'
+            'department' => 'MCA',
+            'institute_ref_id' => 1
         ]);
         Department::factory()->create([
-            'department' => 'IMCA'
+            'department' => 'IMCA',
+            'institute_ref_id' => 1
+
         ]);
         Department::factory()->create([
-            'department' => 'MscIT'
+            'department' => 'MscIT',
+            'institute_ref_id' => 1
+
         ]);
-        
+
     }
 }
