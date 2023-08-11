@@ -667,5 +667,5 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
-
+    <slot/>
 </template>
