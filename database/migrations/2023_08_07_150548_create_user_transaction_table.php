@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->integer('semester_ref_id')->unsigned()->nullable();
             $table->foreign('semester_ref_id')->references('semester_id')->on('semesters');
-            $table->enum('type',['Student','Faculty']);
+            $table->enum('type',['Student','Staff']);
             $table->boolean('is_active')->default(true);
 
             $table->string('password');
